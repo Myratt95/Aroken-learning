@@ -1,0 +1,36 @@
+.one {
+    font-family: 'Open Sans', "sans-serif";
+    font-style: italic;
+    font-size: 20px;
+    height: 30px;
+}
+
+.two {
+    font-family: 'Open Sans', "sans-serif";
+    font-style: normal;
+    font-size: 15px;
+    height: 30px;
+    text-decoration: line-through;
+
+}
+.three {
+    font-family: 'Open Sans', "sans-serif";
+    text-align: center;
+    font-size: 18px;
+    width: 900px;
+}
+.four {
+    font-family: 'Open Sans', "sans-serif";
+    text-decoration: overline;
+    text-shadow: 1px 1px 1px rgb(144, 35, 144);
+    text-decoration-style: wavy;
+    word-spacing: 30px;
+}
+.five {
+    font-family: 'Open Sans', "sans-serif";
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-style:double;
+}
+
+
