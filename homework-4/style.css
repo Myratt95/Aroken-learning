@@ -21,7 +21,7 @@
 }
 .four {
     font-family: 'Open Sans', "sans-serif";
-    text-decoration: overline;
+    text-decoration: underline;
     text-shadow: 1px 1px 1px rgb(144, 35, 144);
     text-decoration-style: wavy;
     word-spacing: 30px;
