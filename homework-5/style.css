@@ -24,4 +24,5 @@
     display: block;
     font-size: 12px;
     padding: 0 10px 0 15px;
+    overflow: auto;
 }
