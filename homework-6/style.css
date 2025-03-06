@@ -1,0 +1,212 @@
+body {
+    background: #181E34;
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 150%;
+    color: #fff;
+}
+
+/*----------------------------------------------------------*/
+
+.nav {
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 410px 0 0;
+}
+
+.nav-buttons {
+    margin-right: 30px;
+}
+
+.voiti-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 100px;
+    width: 113px;
+    height: 48px;
+    background: white;
+    color: #2766AE;
+}
+
+/*-------------------------------------------------------------*/
+
+.infobox {
+    background: url(./pictiries/hero-bg.jpg) 10% 50% / cover no-repeat;
+    height: 500px;
+    text-align: center;
+    padding: 120px 0 0 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.papainfi {
+    display: inline-flex;
+    margin-top: 60px;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.text-storage {
+    max-width: 436px;
+}
+
+.abzacone {
+    margin-bottom: 15px;
+}
+
+.bluewords {
+    color: #01A2CB;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.knopki {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.buttonsup2, .buttonsup1 {
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 320px;
+    height: 56px;
+    font-weight: 500;
+}
+
+.buttonsup1 {
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    margin-bottom: 10px;
+}
+
+.buttonsup2 {
+    background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+}
+
+/*..............................................................................*/
+
+.moreinfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.mstext {
+    display: flex;
+    max-width: 513px;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.msflex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.msfcontent0, .msfcontent1 {
+    background: #197cb8;
+    box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+    border: 2px solid #176bae;
+    border-radius: 16px;
+    padding: 28px;
+    width: 204px;
+    height: 141px;
+    margin-bottom: 28px;
+}
+
+.msfcontent0 {
+    margin-right: 28px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.msbutton {
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 436px;
+    height: 56px;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*......................................................................................*/
+
+.footer-box {
+    border-top: 1px solid #323952;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-storage {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    max-width: 811px;
+}
+
+.felement1 {
+    max-width: 267px;
+    margin-right: 197px;
+}
+
+.flogo {
+    margin-bottom: 15px;
+}
+
+.felement2, .felement3 {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 60px;
+}
+
+.felement2 {
+    margin-right: 117px;
+}
+
+.stolbik {
+    margin-bottom: 20px;
+}
+
+.fmenu1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 194px;
+}
+
+.fmenu2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 126px;
+}
