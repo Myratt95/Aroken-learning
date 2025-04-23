@@ -1,3 +1,22 @@
+
+(function () {
+    
+    document.addEventListener('click', modalInit)
+    
+    function modalInit(e) {
+        const target = e.target
+        const giftIcon = target.closest('.about__img-button')
+        const closeButton = target.closest('.modal_close-button')
+        
+        if (!giftIcon && !closeButton) return
+
+        if (!document.body.classList.contains('body--opened-modal')) {
+            document.body.classList.add('body--opened-modal')
+        }  else document.body.classList.remove('body--opened-modal')
+    }
+
+})()
+
 const button = document.querySelector('.burger-icon')
 const body = document.querySelector('.body')
 const menuButtons = document.querySelectorAll('.nav__link')
@@ -15,6 +34,5 @@ menuButtons.forEach((menuButton) => {
         body.classList.remove('body--opened-menu')
     })
 })
-
 
 
