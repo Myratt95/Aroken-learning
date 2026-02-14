@@ -1,0 +1,84 @@
+
+
+body {
+    /* Важно: body должен быть относительным родителем */
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    
+    /* Центрируем контент (как обсуждали) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7%;
+}
+
+.video-background {
+    position: fixed; /* fixed или absolute - смотри пояснения ниже */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1; /* Отправляем видео на задний план */
+    
+    /* Затемнение видео (чтобы текст лучше читался) */
+    filter: brightness(0.95); /* 1 - нормально, 0.5 - темнее, 0 - чернота */
+    object-fit: cover; /* Чтобы видео покрывало всю область */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(152, 152, 152);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.843); /* Тень для текста */
+    padding: 20px;
+    z-index: 1;
+    
+    /* Если хочешь полупрозрачную подложку под текст */
+    max-width: 800px;
+    width: 90%;
+}
+
+.content h1 {
+    font-size: clamp(3rem, 7vw, 4rem);
+    margin-bottom: 40px;
+}
+
+.content__convert {
+    max-width: 330px;
+}
+
+.content__convert img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nice-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #0e324e, #0a0da8); /* Градиент */
+    color: white;
+    text-decoration: none;  /* Убираем подчёркивание */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;    /* Скругление */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.nice-button:hover {
+    transform: translateY(-3px);  /* Приподнимается */
+    box-shadow: 0 8px 25px rgba(0, 0, 255, 0.6);
+}
+
+.nice-button:active {
+    transform: translateY(0);     /* Опускается при клике */
+}

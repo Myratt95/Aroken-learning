@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LubluAnya</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styleforanya.css">
+</head>
+<body>
+<!-- Видеофон -->
+    <video class="video-background" autoplay loop muted playsinline>
+        <!-- Добавляем видео в разных форматах для поддержки всех браузеров -->
+        <source src="bubu.mp4" type="video/mp4">
+
+        <!-- Если браузер не поддерживает видео - покажем картинку -->
+        <img src="image/fallback.jpg" alt="фон">
+    </video>
+    
+    <!-- Твой контент (по центру) -->
+    <div class="content">
+        <h1>Опа! А что тут у нас?</h1>
+        <div class="content__convert">
+            <img src="./convert2.jpg" alt="">
+        </div>
+        <a href="page2.html">
+            <button class="nice-button">Открыть</button>
+        </a>
+    </div>
+</body>
+</html>
