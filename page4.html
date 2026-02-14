@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnyaMolodec</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/styleforanya.css">
+    <link rel="stylesheet" href="reset.css">  <!-- Убрал слеши -->
+    <link rel="stylesheet" href="styleforanya.css">  <!-- Убрал слеши -->
 </head>
 <body>
     <video class="video-background" autoplay loop muted playsinline>
-        <!-- Добавляем видео в разных форматах для поддержки всех браузеров -->
         <source src="bubu.mp4" type="video/mp4">
-
-        <!-- Если браузер не поддерживает видео - покажем картинку -->
         <img src="image/fallback.jpg" alt="фон">
     </video>
-    <div class="content3">
+    
+    <!-- Тоже добавляем position relative -->
+    <div class="content3" style="position: relative; z-index: 10;">
         <h1>Конечно, смотри какие мы зайки</h1>
         <div class="photo__grid">
             <div class="content3__img">
-                <img src="./IMG_0582.JPG" alt="">
+                <!-- Проверь точное название файлов! GitHub чувствителен к регистру -->
+                <img src="IMG_0582.JPG" alt="">  <!-- Убрал ./
+                <img src="./img_0582.jpg" alt="">  Если файл с маленькими буквами -->
             </div>
             <div class="content3__img">
-                <img src="./IMG_9978.JPG" alt="">
+                <img src="IMG_9978.JPG" alt="">  <!-- Убрал ./ -->
             </div>
         </div>
     </div>
