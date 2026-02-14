@@ -1,0 +1,196 @@
+body {
+    /* Важно: body должен быть относительным родителем */
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    
+    /* Центрируем контент (как обсуждали) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7%;
+}
+
+/* Стили для видеофона */
+.video-background {
+    position: fixed; /* fixed или absolute - смотри пояснения ниже */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1; /* Отправляем видео на задний план */
+    
+    /* Затемнение видео (чтобы текст лучше читался) */
+    filter: brightness(0.95); /* 1 - нормально, 0.5 - темнее, 0 - чернота */
+    object-fit: cover; /* Чтобы видео покрывало всю область */
+}
+
+/* Твой контент поверх видео */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(147, 64, 127);
+    text-shadow: 0 2px 10px rgba(138, 0, 112, 0.843); /* Тень для текста */
+    padding: 20px;
+    z-index: 1;
+    
+    /* Если хочешь полупрозрачную подложку под текст */
+    max-width: 800px;
+    width: 90%;
+}
+
+/* Стили для заголовка */
+.content h1 {
+    font-size: clamp(3rem, 7vw, 4rem);
+    margin-bottom: 40px;
+}
+
+.content__convert {
+    max-width: 330px;
+}
+
+.content__convert img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.nice-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #ea66e1, #be2323); /* Градиент */
+    color: white;
+    text-decoration: none;  /* Убираем подчёркивание */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;    /* Скругление */
+    box-shadow: 0 4px 15px rgba(210, 102, 234, 0.4);
+    transition: all 0.3s ease;
+}
+
+.nice-button:hover {
+    transform: translateY(-3px);  /* Приподнимается */
+    box-shadow: 0 8px 25px rgba(232, 102, 234, 0.6);
+}
+
+.nice-button:active {
+    transform: translateY(0);     /* Опускается при клике */
+}
+
+
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+    align-items: center;
+    color: rgb(147, 64, 127);
+    padding: 20px;
+    z-index: 1;
+    
+    /* Если хочешь полупрозрачную подложку под текст */
+    max-width: 800px;
+    width: 90%;
+}
+
+.content2__cat video{
+    width: 100%;        /* Видео занимает 100% ширины родителя */
+    height: auto; 
+}
+
+.content2__buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.nice-buttonn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #6a3a22, #0e5724);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nice-buttonn:hover{
+    position: absolute;
+    transform: translate(200px, -10px);  /* Вправо и вверх */
+    box-shadow: 0 10px 25px rgba(245, 87, 108, 0.5);
+}
+
+.content3 {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+}
+
+.content3:hover {
+    transform: translateY(-5px);
+}
+
+.content3 h1 {
+    text-align: center;
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            background: linear-gradient(135deg, #a14cbd, #861190);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-weight: 700;
+}
+
+.photo__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;  /* Два фото в ряд */
+            gap: 25px;
+            margin: 30px 0 20px;
+}
+
+.content3__img {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    aspect-ratio: 4 / 3;  /* Соотношение сторон фото */
+}
+
+.content3__img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.content3__img img {
+    width: 100%;
+            height: 100%;
+            object-fit: cover;  /* Чтобы красиво заполняло карточку */
+            display: block;
+            transition: transform 0.5s ease;
+}
+
+.content3__img img:hover {
+    transform: scale(1.1);
+}
+
+
