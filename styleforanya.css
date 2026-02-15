@@ -206,13 +206,21 @@ body {
 }
 
 /* Поднимаем весь контент */
-.content, 
 .content2, 
-.content3,
-div[class*="content"] {
+.content3
+        {
     position: relative !important;
     z-index: 10 !important;
     background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+    margin: 20px auto !important;
+}
+
+.content
+     {
+    position: relative !important;
+    z-index: 10 !important;
     border-radius: 20px !important;
     padding: 20px !important;
     margin: 20px auto !important;
